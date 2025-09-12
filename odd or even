@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+using namespace  std;
+int main() {
+    int num;
+    char again;
+
+    do { cout<<"Enter number and I willtell you it is odd or even";
+        cin>>num;
+        if(num%2==0)
+            cout<<"Your number is even\n";
+        else
+            cout<<"Your number is odd\n";
+        cout<<"Do you wish to try another number?(Y/N)";
+        cin>>again;
+        cout<<endl;}
+    while (again=='y' || again=='Y');
+    return 0;
+}
